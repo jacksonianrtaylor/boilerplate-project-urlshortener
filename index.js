@@ -5,9 +5,10 @@ const app = express();
 const dns = require('dns')
 
 //added modules
-const mySecret = process.env['MONGO_URI']
+//const mySecret = process.env['MONGO_URI']
 mongoose = require('mongoose')
 bodyParser = require("body-parser");
+const mySecret = process.env['MONGO_URI']
 mongoose.connect(mySecret, { useNewUrlParser: true, useUnifiedTopology: true });
 const shortId = require('shortid')
 
